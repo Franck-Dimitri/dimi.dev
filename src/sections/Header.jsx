@@ -79,7 +79,7 @@ export default function Header() {
 
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div id="mobile-menu" className="lg:hidden space-y-2 p-2 absolute top-full left-0 right-0 mt-2 mx-4 border border-fuchsia-200 bg-white dark:bg-gray-900 rounded-2xl shadow-xl animate-fadeInDown">
+        <div id="mobile-menu" className="lg:hidden space-y-2 p-2 absolute top-full left-0 right-0 mt-2 mx-4 border border-fuchsia-200 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-2xl shadow-xl animate-fadeInDown">
           <nav className="flex flex-col">
             {['home', 'projets', 'services', 'about', 'faq', 'contact'].map(link => (
               <a key={link} href={`#${link}`} className="font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 hover:bg-fuchsia-50 dark:hover:bg-gray-800 rounded-lg px-5 py-2 transition-all duration-300" onClick={() => setIsMenuOpen(false)}>

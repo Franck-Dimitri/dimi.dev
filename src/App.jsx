@@ -32,7 +32,6 @@ export default function App() {
       <DarkVeil />
     </div> */}
       <Hero />
-      <Projets />
       <Header />
     </div>
     
