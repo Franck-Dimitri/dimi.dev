@@ -1,10 +1,33 @@
-import { CalendarMinus } from "lucide-react/"
+import { CalendarMinus } from "lucide-react"
+import Projets from "./sections/Projets"
+import Header from "./sections/Header"
+import Hero from "./sections/Hero"
 
 export default function App() {
+
   return (
-    <h1 className="text-3xl mt-20 font-bold underline text-blue-500">
-      Hello world!
-      <CalendarMinus name="usersearchicon" size={48} />
-    </h1>
+    <>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Poppins', 'system-ui', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+          `,
+        }}
+      />
+      <Hero />
+      <Projets />
+      <Header />
+    </>
   )
 }
