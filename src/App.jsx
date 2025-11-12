@@ -2,6 +2,8 @@ import { CalendarMinus } from "lucide-react"
 import Projets from "./sections/Projets"
 import Header from "./sections/Header"
 import Hero from "./sections/Hero"
+import DarkVeil from './components/DarkVeil';
+
 
 export default function App() {
 
@@ -25,9 +27,15 @@ export default function App() {
           `,
         }}
       />
+    <div className="aboslute">
+    {/* <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+      <DarkVeil />
+    </div> */}
       <Hero />
       <Projets />
       <Header />
+    </div>
+    
     </>
   )
 }
