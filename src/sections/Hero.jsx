@@ -94,7 +94,7 @@ export default function Hero(){
               <div className="order-1 lg:order-2 flex justify-center">
                 <div className="relative">
                   <div className="relative z-10 border border-pink-500/10 rounded-full overflow-hidden p-2 shadow-2xl bg-white/10 backdrop-blur transition hover:scale-105 cursor-pointer duration-400">
-                    <img src="src/assets/moi/IMG_7608.JPG" alt="Mon image" class="w-[270px] sm:w-[280px] md:w-[300px] lg:w-[350px] xl:w-[350px] object-contain rounded-full"/>
+                    <img src="/assets/moi/IMG_7608.JPG" alt="Mon image" class="w-[270px] sm:w-[280px] md:w-[300px] lg:w-[350px] xl:w-[350px] object-contain rounded-full"/>
                   </div>
                   
                   <div className="absolute -top-4 -left-4 w-12 h-12 bg-pink-500/20 backdrop-blur-lg rounded-full border border-white/20 animate-pulse"></div>
