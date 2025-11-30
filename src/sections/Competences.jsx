@@ -46,7 +46,7 @@ function Competences() {
                     <p className="text-gray-900 dark:text-white text-xs">Projets Concrets</p>
                   </div>
                 </div>
-            <p className="justify-center items-center flex text-3xl md:text-4   xl lg:text-6xl bg-gradient-to-r from-yellow-600 to-fuchsia-400 bg-clip-text text-transparent font-bold">Projets Concrets</p>
+            <p className="justify-center items-center flex text-3xl md:text-4   xl lg:text-6xl text-pink-500 font-bold">Projets Concrets</p>
             <p className="justify-center items-center flex text-xs md:text-lg lg:text-lg text-gray-700 dark:text-gray-200 mt-5 ">Découvrez mes réalisations les plus récentes où j’ai exprimé ma créativité et mon expertise depuis 2024.</p>
             
           </div>

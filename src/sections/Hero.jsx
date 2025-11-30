@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CloudCheckIcon, Menu, Sun, Moon, Code, SquareTerminal, Share2 } from "lucide-react";
+import { CloudCheckIcon, Menu, Sun, Moon, Code, SquareTerminal, Share2, Zap, FolderGit2, Layers } from "lucide-react";
 import AnimationGauche from "../components/AnimationGauche";
 import TextType from "../components/TextType";
 
@@ -28,7 +28,7 @@ export default function Hero(){
         <section className="relative min-h-screen bg-gray-50 dark:dark:bg-black/70 flex py-20  pt-20 lg:pt-20 items-center overflow-hidden ">
 
           <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl animate-float-slow"></div>
-          <Share2 size={50} className="absolute bottom-20 left-10 opacity-10 animate-pulse rotate-x-6"/>
+          <Share2 className="text-4xl md:text-7xl absolute bottom-20 left-10 md:left-10 opacity-10 animate-pulse rotate-x-6"/>
           <SquareTerminal size={50} className="absolute top-30 md:right-30  right-10 opacity-5 animate-spin rotate-20"/>
           <div class="absolute -top-20 -left-20 w-150 h-150 rounded-full bg-fuchsia-500/5 blur-3xl "></div>
           <div class="absolute top-162 left-190 w-20 h-20 rounded-lg bg-fuchsia-500/5 backdrop-blur opacity-80 rotate-20"></div>
@@ -109,8 +109,36 @@ export default function Hero(){
             <AnimationGauche distance={50} direction="horizontal" delay={1}>
                 <div className="order-1 lg:order-2 flex justify-center">
                   <div className="relative">
-                    <div className="relative z-10 border border-pink-500/10 rounded-full overflow-hidden p-2 shadow-2xl bg-white/10 backdrop-blur transition hover:scale-105 cursor-pointer duration-400">
+                      <div 
+                        className="absolute top-14 -right-100 -translate-x-1/2 
+                                  px-4 py-2 rounded-xl bg-white/10 backdrop-blur-lg 
+                                  border border-white/20 shadow-xl flex items-center gap-4
+                                  animate-slide-tech z-30"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-white text-xl"><Zap fill="white"/></span>
+                          <p className="font-bold text-white text-sm sm:text-base">Mr_Dims</p>
+                        </div>
+
+                        <div className="w-px h-5 bg-white/20"></div>
+
+                        <div className="flex items-center gap-2">
+                           <span className="dark:text-white "><FolderGit2 size={18}/></span>
+                          <p className="dark:text-white/80 text-xs sm:text-sm">27 projets</p>
+                        </div>
+                        <div className="w-px h-5 bg-white/20"></div>
+
+                        <div className="flex items-center gap-2">
+                        <span className="dark:text-white "><Layers size={18}/></span>
+
+                          <p className="dark:text-white/80 text-xs sm:text-sm">Full Stack</p>
+                        </div>
+                      </div>
+
+                    <div className="relative z-10 border border-pink-500/10 rounded-full overflow-hidden p-2 shadow-2xl bg-white/10 backdrop-blur transition hover:scale-105 cursor-pointer duration-400 animate-pulse">
                       <img src="/assets/moi/IMG_7608.JPG" alt="Mon image" class="w-[270px] sm:w-[280px] md:w-[300px] lg:w-[350px] xl:w-[350px] object-contain rounded-full"/>
+                    </div>
+                    <div className="z-20 rounded-lg absolute top-10 right-20 p-2 bg-white  border border-fuchsia-100 flex items-center justify-center shadow-lg animate-float-slow hover:scale-110 transition duration-300 cursor-pointer">
                     </div>
                     
                     <div className="absolute -top-4 -left-4 w-12 h-12 bg-pink-500/20 backdrop-blur-lg rounded-full border border-white/20 animate-pulse"></div>
