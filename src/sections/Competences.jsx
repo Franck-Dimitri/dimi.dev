@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CalendarMinus } from "lucide-react"
+import { CalendarMinus, ExternalLink, Code, SplinePointer } from "lucide-react"
 import AnimationGauche from "../components/AnimationGauche";
 import TextType from "../components/TextType";
 
@@ -15,168 +15,79 @@ function Competences() {
                 <div className="mb-4 flex items-center justify-center mt-3 md:mt-0">
                   <div className="flex justify-center p-2 gap-2 rounded-full items-center border border-fuchsia-200 bg-fuchsia-100 dark:bg-gray-900">
                     <div className="bg-fuchsia-600 animate-pulse p-1 rounded-full"></div>
-                    <p className="dark:text-white text-xs">Projets</p>
+                    <p className="dark:text-white text-xs">Projets Concrets</p>
                   </div>
                 </div>
             <p className="justify-center items-center flex text-2xl md:text-4xl lg:text-5xl text-gray-700 dark:text-gray-200  font-bold">Projets Concrets</p>
             <p className="justify-center items-center flex text-xs md:text-lg lg:text-lg text-gray-700 dark:text-gray-200 ">Decouvrez les projets sur lesquels j'ai travaille</p>
             
           </div>
-          <div className="flex justify-center items-center w-full mb-10">    
+          <div className="flex justify-center items-center w-full mb-10 m-10 md:m-5 lg:m-0">    
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div className="h-48 bg-gradient-to-br from-purple-500 to-blue-500 relative">
-                        <img src="/assets/moi/IMG_7608.JPG" alt="" class="w-full h-full object-cover opacity-80" />
-                        <div className="absolute top-4 right-4">
-                            <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">en cours</span>
+                <a href="" className="relative group hover:scale-105 transition-transform duration-400 ">
+                    <div className="relative bg-white dark:bg-gradient-to-br from-black to-gray-900 rounded-2xl shadow-lg border border-gray-100 dark:border-0 overflow-hidden hover:shadow-md transition-shadow hover:border hover:border-fuchsia-600">
+                        <div className="group relative h-48 bg-gradient-to-br from-purple-500 to-blue-500 ">
+                            <div className="absolute  h-48 w-full  bg-gradient-to-br  to-black/60 object-cover p-10 group-hover:to-black/20"></div>
+                            <img src="/assets/img_test/img_tensio.png" alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                            <div className="absolute bg-green-100 px-2 py-1 rounded-full top-4 right-4 flex justify-center p-2 gap-2 items-center">
+                                <div className="bg-green-600 animate-pulse p-1 rounded-full"></div>
+                                <span className=" text-green-700 text-xs ">Public</span>
+                            </div>
+                            <div className=" flex justify-between items-center absolute bottom-4 left-4">
+                                <span className="text-white font-semibold flex justify-center gap-2 items-center">Developpement Web <SplinePointer /></span>
+                            </div>
                         </div>
-                        <div className="absolute bottom-4 left-4">
-                            <span className="text-white font-semibold">Design Graphique</span>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Photo de Profile Pro</h3>
-                        <p className="text-gray-600 text-sm mb-4">Photo de profil professionnels fait par FD pour li meme</p>
-                        
-                        <div className="flex items-center justify-between mb-4">
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-calendar text-purple-600 text-xs"></i>
+                        <div className="p-6">
+                            <h3 className="text-lg font-semibold bg-gradient-to-r from-fuchsia-600  to-yellow-400 bg-clip-text text-transparent mb-2">Mercy Tensio</h3>
+                            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">Site vitrine de Mercy Tensio une App de suivie de <br /> tension arteriel</p>
+                            
+                            <div className="flex items-center justify-between mb-4">
+                                <div className="flex items-center gap-2">
+                                    <div className="w-6 h-6 dark:bg-purple-100/10 bg-blue-100/10 rounded-full flex items-center justify-center">
+                                        <i className="fas fa-calendar text-purple-600 text-xs"></i>
+                                    </div>
+                                    <span className="text-sm text-gray-500 dark:text-gray-400">20-02-2025</span>
                                 </div>
-                                <span className="text-sm text-gray-500">20-02-2025</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-eye text-blue-600 text-xs"></i>
+                                <div className="flex items-center gap-2">
+                                    <div className="w-6 h-6 dark:bg-blue-100/10 bg-blue-100/10 rounded-full flex items-center justify-center">
+                                        <i className="fas fa-eye text-blue-600 text-xs"></i>
+                                    </div>
+                                    <span className="text-sm text-gray-500 dark:text-gray-400">1.2k</span>
                                 </div>
-                                <span className="text-sm text-gray-500">1.2k</span>
                             </div>
-                        </div>
-
-                        <div className="flex items-center justify-between">
-                            <div className="flex gap-2">
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React</span>
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Node.js</span>
-                            </div>
-                            <div className="flex gap-2">
-
-                                <a href=""className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
-                                    <i data-lucide="eye" class="text-gray-600 w-4 h-5"></i>
-                                </a>
-
-                                <form action="" method="POST" class="inline">
+                                <div className="mt-3 font-meduim  text-gray-700  rounded text-xs">
+                                    <p className="flex items-center justify-start gap-1 text-yellow-500/50"> <Code size={16}/> Satcks techniques </p>
+                                </div>
+                            <div className="flex items-center justify-between mt-3">
                                
-                                    <button type="submit" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')" 
-                                            className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-lg flex items-center gap-2 transition-colors">
-                                        <i data-lucide="trash-2" className="w-4 h-4"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div className="h-48 bg-gradient-to-br from-purple-500 to-blue-500 relative">
-                        <img src="/assets/moi/IMG_7608.JPG" alt="" class="w-full h-full object-cover opacity-80" />
-                        <div className="absolute top-4 right-4">
-                            <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">en cours</span>
-                        </div>
-                        <div className="absolute bottom-4 left-4">
-                            <span className="text-white font-semibold">Design Graphique</span>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Photo de Profile Pro</h3>
-                        <p className="text-gray-600 text-sm mb-4">Photo de profil professionnels fait par FD pour li meme</p>
-                        
-                        <div className="flex items-center justify-between mb-4">
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-calendar text-purple-600 text-xs"></i>
+                                <div className="flex gap-2">
+                                    <span className="dark:bg-gray-100/20 dark:text-white bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React</span>
+                                    <span className="dark:bg-gray-100/20 dark:text-white bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Node.js</span>
                                 </div>
-                                <span className="text-sm text-gray-500">20-02-2025</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-eye text-blue-600 text-xs"></i>
+                                <div className="flex gap-2">
+
+                                    <a href=""className="p-3 rounded-lg dark:bg-gray-100/10 bg-gray-100/10 hover:bg-gray-200 flex items-center justify-center transition-colors">
+                                        
+                                    </a>
+                                    <a href=""className="p-3 rounded-lg bg-gray-100/ dark:bg-gray-100/10  hover:bg-gray-200 flex items-center justify-center transition-colors">
+                                        
+                                    </a>
+                                    <a href=""className="p-3 rounded-lg bg-gray-100 dark:bg-gray-100/10  hover:bg-gray-200 flex items-center justify-center transition-colors">
+                                        
+                                    </a>
                                 </div>
-                                <span className="text-sm text-gray-500">1.2k</span>
                             </div>
-                        </div>
 
-                        <div className="flex items-center justify-between">
-                            <div className="flex gap-2">
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React</span>
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Node.js</span>
+                            <hr className="mt-5 dark:opacity-25"/>
+
+                            <div className="mt-5 flex justify-between items-center">
+                                <p className="text-xs text-gray-500">Mis à jour il y a 3 jours</p>
+                                <a href="" className="px-4 py-2 rounded-lg animate-pulse bg-fuchsia-600 flex gap-2 items-center justify-center text-sm text-white">voir les details <ExternalLink size={16}/></a>
                             </div>
-                            <div className="flex gap-2">
 
-                                <a href=""className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
-                                    <i data-lucide="eye" class="text-gray-600 w-4 h-5"></i>
-                                </a>
-
-                                <form action="" method="POST" class="inline">
-                               
-                                    <button type="submit" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')" 
-                                            className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-lg flex items-center gap-2 transition-colors">
-                                        <i data-lucide="trash-2" className="w-4 h-4"></i>
-                                    </button>
-                                </form>
-                            </div>
                         </div>
                     </div>
-                </div>
-                 <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div className="h-48 bg-gradient-to-br from-purple-500 to-blue-500 relative">
-                        <img src="/assets/moi/IMG_7608.JPG" alt="" class="w-full h-full object-cover opacity-80" />
-                        <div className="absolute top-4 right-4">
-                            <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">en cours</span>
-                        </div>
-                        <div className="absolute bottom-4 left-4">
-                            <span className="text-white font-semibold">Design Graphique</span>
-                        </div>
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Photo de Profile Pro</h3>
-                        <p className="text-gray-600 text-sm mb-4">Photo de profil professionnels fait par FD pour li meme</p>
-                        
-                        <div className="flex items-center justify-between mb-4">
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-calendar text-purple-600 text-xs"></i>
-                                </div>
-                                <span className="text-sm text-gray-500">20-02-2025</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <i className="fas fa-eye text-blue-600 text-xs"></i>
-                                </div>
-                                <span className="text-sm text-gray-500">1.2k</span>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center justify-between">
-                            <div className="flex gap-2">
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">React</span>
-                                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">Node.js</span>
-                            </div>
-                            <div className="flex gap-2">
-
-                                <a href=""className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors">
-                                    <i data-lucide="eye" class="text-gray-600 w-4 h-5"></i>
-                                </a>
-
-                                <form action="" method="POST" class="inline">
-                               
-                                    <button type="submit" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce projet ?')" 
-                                            className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-lg flex items-center gap-2 transition-colors">
-                                        <i data-lucide="trash-2" className="w-4 h-4"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
               </div>
           </div>
         </section>
