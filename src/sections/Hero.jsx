@@ -136,7 +136,7 @@ export default function Hero(){
                       </div>
 
                     <div className="relative z-10 border border-pink-500/10 rounded-full overflow-hidden p-2 shadow-2xl bg-white/10 backdrop-blur transition hover:scale-105 cursor-pointer duration-400 animate-pulse">
-                      <img src="/assets/moi/IMG_7608.JPG" alt="Mon image" class="w-[270px] sm:w-[280px] md:w-[300px] lg:w-[350px] xl:w-[350px] object-contain rounded-full"/>
+                      <img src="/assets/img_test/moi_pp_professionelle.png" alt="Mon image" class="w-[270px] sm:w-[280px] md:w-[300px] lg:w-[350px] xl:w-[350px] object-contain rounded-full"/>
                     </div>
                     <div className="z-20 rounded-lg absolute top-10 right-20 p-2 bg-white  border border-fuchsia-100 flex items-center justify-center shadow-lg animate-float-slow hover:scale-110 transition duration-300 cursor-pointer">
                     </div>
