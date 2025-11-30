@@ -64,7 +64,7 @@ export default function Header() {
 
         <nav className="hidden lg:flex items-center gap-2">
           {['home', 'projets', 'services', 'about', 'faq', 'contact'].map(link => (
-            <a key={link} href={`#${link}`} className="font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 hover:bg-fuchsia-50 dark:hover:bg-gray-800 rounded-2xl px-5 py-2 transition-all duration-300" >{link}</a>
+            <a key={link} href={`#${link}`} className="font-medium text-gray-700 dark:text-gray-200 hover:text-fuchsia-500 hover:bg-fuchsia-50 dark:hover:bg-gray-800 rounded-lg px-5 py-2 transition-all duration-300" >{link}</a>
           ))}
 
           <button onClick={toggleTheme} className="ml-4 bg-fuchsia-100 dark:bg-gray-800 hover:bg-fuchsia-200 dark:hover:bg-gray-700 transition-colors duration-300 text-fuchsia-600 dark:text-yellow-400 rounded-xl p-2 flex items-center justify-center">
