@@ -22,7 +22,7 @@ function Competences() {
             <p className="justify-center items-center flex text-xs md:text-lg lg:text-lg text-gray-700 dark:text-gray-200 ">Decouvrez les projets sur lesquels j'ai travaille</p>
             
           </div>
-          <div className="flex justify-center items-center w-full mb-10 m-10 md:m-5 lg:m-0">    
+          <div className="flex justify-center items-center w-full mb-10 p-5 md:p-0 lg:m-0">    
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="" className="relative group hover:scale-105 transition-transform duration-400 ">
                     <div className="relative bg-white dark:bg-gradient-to-br from-black to-gray-900 rounded-2xl shadow-lg border border-gray-100 dark:border-0 overflow-hidden hover:shadow-md transition-shadow hover:border hover:border-fuchsia-600">
@@ -82,7 +82,12 @@ function Competences() {
 
                             <div className="mt-5 flex justify-between items-center">
                                 <p className="text-xs text-gray-500">Mis à jour il y a 3 jours</p>
-                                <a href="" className="px-4 py-2 rounded-lg animate-pulse bg-fuchsia-600 flex gap-2 items-center justify-center text-sm text-white">voir les details <ExternalLink size={16}/></a>
+                                <a href="" >
+                                    <div className="px-4 py-2 rounded-lg animate-pulse bg-fuchsia-600 flex gap-2 items-center justify-center text-sm text-white">
+                                        <p className="hidden md:block">voir les</p>
+                                        <p className="flex gap-2 items-center justify-center">details <ExternalLink size={16}/></p>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
