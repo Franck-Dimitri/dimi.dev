@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CloudCheckIcon, Menu, Sun, Moon } from "lucide-react";
+import { CloudCheckIcon, Menu, Sun, Moon, Code, SquareTerminal, Share2 } from "lucide-react";
 import AnimationGauche from "../components/AnimationGauche";
 import TextType from "../components/TextType";
 
@@ -25,14 +25,29 @@ export default function Hero(){
 
     return(
       <>
-        <section className="relative min-h-screen bg-gray-50 dark:bg-gray-900 flex py-20  pt-20 lg:pt-20 items-center overflow-hidden ">
+        <section className="relative min-h-screen bg-gray-50 dark:dark:bg-black/70 flex py-20  pt-20 lg:pt-20 items-center overflow-hidden ">
 
           <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl animate-float-slow"></div>
+          <Share2 size={50} className="absolute bottom-20 left-10 opacity-10 animate-pulse rotate-x-6"/>
+          <SquareTerminal size={50} className="absolute top-30 md:right-30  right-10 opacity-5 animate-spin rotate-20"/>
+          <div class="absolute -top-20 -left-20 w-150 h-150 rounded-full bg-fuchsia-500/5 blur-3xl "></div>
+          <div class="absolute top-162 left-190 w-20 h-20 rounded-lg bg-fuchsia-500/5 backdrop-blur opacity-80 rotate-20"></div>
+
+          <div class="absolute  -bottom-10 -right-10 w-150 h-150 rounded-full bg-yellow-700/10  blur-3xl "></div>
+
 
           <div class="absolute top-10 w-100 h-20 bg-sky-500/30  blur-3xl animate-float-slow"></div>
           <div class="absolute w-10/10 lg:w-8/10 lg:left-50 top-50 h-1 bg-gradient-to-r from-fuchsia-500/1 via-fuchsia-500/30 to-fuchsia-500/1 animate-float-slow"></div>
           <div class="absolute w-10/10 lg:w-8/10 lg:left-50 bottom-15 md:bottom-25 lg:bottom-50 h-1 bg-gradient-to-r from-fuchsia-500/1 via-fuchsia-500/30 to-fuchsia-500/1 animate-float-slow"></div>
+                <div className="absolute inset-0 
+                    bg-[radial-gradient(circle,rgba(56,189,248,0.15)_1px,transparent_1px)]
+                    bg-[size:24px_24px] opacity-40">
+                </div>
 
+                <div className="absolute inset-0 
+                    bg-[radial-gradient(circle,rgba(56,189,248,0.4)_1px,transparent_1px)] 
+                    bg-[size:120px_120px] opacity-20">
+                </div>
           <div class="container mt-15 md:mt-10 lg:mt-1 mx-auto px-10 md:px-15 lg:px-20 relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-3 md:gap-7 lg:gap-10">
             <AnimationGauche distance={50} direction="horizontal" delay={2}>
               <div className="max-w-3xl order-2 lg:order-1  space-y-3 md:space-y-6 text-center lg:text-left">

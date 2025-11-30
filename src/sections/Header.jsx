@@ -45,8 +45,8 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed top-4 inset-x-4 z-50 bg-white/80 dark:bg-gray-900 backdrop-blur-lg rounded-3xl border border-fuchsia-200 dark:border-gray-700 shadow-xl transition-colors duration-300">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+    <header className="fixed top-4 max-w-7xl mx-auto inset-x-4 z-50 bg-white/5  backdrop-blur-lg rounded-3xl border border-fuchsia-200 dark:border-gray-900 shadow-xl transition-colors duration-300">
+      <div className="mx-auto px-2  sm:px-6 lg:px-8 py-2 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
             <div className="p-3">
                 <div className="w-3 h-3 bg-fuchsia-600 rounded-full animate-pulse"></div>
